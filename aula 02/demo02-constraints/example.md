@@ -1,0 +1,3 @@
+- criar duas tabelas, uma com primary key unica e outra com primary key composta
+- inseririr dados
+- realizar teste de performance nas duas tabelas ao buscar pelo mesmo registro
