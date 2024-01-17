@@ -38,3 +38,7 @@ select substring(
        (locate(' ', name) + 1)
    )
 ) as 'middle name' from users;
+
+
+-- but what if the name doesn't have a 'middle name'?
+-- learn about case function

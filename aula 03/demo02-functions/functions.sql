@@ -24,11 +24,11 @@ select trim(name) as Nome from users;
 -- substring(string, start, length) (in programming generally the index starts at 0, in this case in SQL command the index starts at 1)
 select substring('abcdef', 1, 2) as ab;
 
--- trick capitalize
+-- Can you capitalize the word?
 select concat(upper(substring(name, 1, 1)), lower(substring(name, 2))) as 'Captalized Name' from users;
 
 -- replace command
-select replace('abc', 'b', 'x') as 'abc -> axc';
+select replace('abcb', 'b', 'x') as 'abcb -> axcx';
 select replace(name, 'a', 'X') as Nome from users;
 
 -- advanced replace
@@ -44,6 +44,34 @@ select reverse(name) as Nome from users;
 select locate('a', 'banana') as 'position_of_a'; -- 2
 select locate('a', 'banana', 2) as 'position_of_a'; -- 4
 select locate('a', name) as 'position_of_a' from users;
+
+
+-- max command
+select max(value) from products;
+    -- How do I get the entire record?
+    select * from products where value = (select max(value) from products);
+-- min command
+select min(value) from products;
+
+-- avg command
+select avg(value) from products;
+
+-- sum command
+select sum(value) from products;
+
+-- count command
+select count(*) from products;
+
+-- group by command
+select category, count(*) from products group by category;
+
+-- having command (only works with group by command)
+select category, count(*) as count from products group by category having count > 10;
+
+select category, count(*) as count from products group by category having category like '%j%';
+-- the same as (more efficient)
+select category, count(*) as count from products where category like '%j%' group by category;
+
 
 
 

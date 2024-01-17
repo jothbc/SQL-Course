@@ -30,4 +30,14 @@ CREATE TABLE constraint_not_null (
 );
 drop table constraint_not_null;
 
-
+-- INDEX
+CREATE TABLE constraint_index (
+     id INT PRIMARY KEY,
+     nome VARCHAR(50),
+     email varchar(50),
+     INDEX index_nome (nome),
+     INDEX index_email (email)
+     -- or INDEX (nome) (this will create the index called 'nome')
+     -- or INDEX meu_index (nome,email)
+);
+drop table constraint_index

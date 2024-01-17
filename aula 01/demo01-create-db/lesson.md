@@ -1,0 +1,3 @@
+- database.sql
+- charset.sql
+- latin1_utf8mb4.js
