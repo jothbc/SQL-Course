@@ -39,3 +39,6 @@ select * from products where value between 100 and 200;
 
 -- in operator
 select * from products where value in (100, 200);
+
+-- explain command
+explain select * from products where value in (100, 200);
