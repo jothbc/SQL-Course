@@ -1,0 +1,6 @@
+- inner-join.sql
+- left-join.sql
+- right-join.sql
+- full-join.sql
+- cross-join.sql
+- self-join.sql

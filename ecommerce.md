@@ -16,7 +16,7 @@
 - Cada produto deve ter um nome, uma descrição, um valor e uma categoria
 
 ### O sistema deve ter uma lista de pedidos
-- Cada pedido deve ter um cliente e uma lista de itens
+- Os pedidos devem ser como uma 'nota fiscal', onde cada pedido deve ter um cliente, um endereço (de entrega) e os itens do pedido
 
 
 
